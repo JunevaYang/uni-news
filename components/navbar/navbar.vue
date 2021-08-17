@@ -13,7 +13,7 @@
 				</view>
 			</view>
 		</view>
-		<view style="height: 45px;"></view>
+		<view :style="{height:statusBarHeight+navBarHeight+'px'}"></view>
 	</view>
 </template>
 
@@ -43,6 +43,7 @@
 				.statusBarHeight)
 			this.windowWidth = menuButtonInfo.left
 			// #endif
+			console.log(this.statusBarHeight+this.navBarHeight)
 		}
 	}
 </script>
@@ -54,12 +55,11 @@
 			top: 0;
 			left: 0;
 			z-index: 99;
-
 			width: 100%;
 			background-color: $mk-base-color;
 
 			.navbar-content {
-				// height: 45px;
+				height: 45px;
 				padding: 0 15px;
 				display: flex;
 				justify-content: center;
@@ -69,7 +69,7 @@
 				.navbar-serach {
 					display: flex;
 					align-items: center;
-					padding: 0 10px;
+					padding: 0 10px; 
 					width: 100%;
 					height: 30px;
 					border-radius: 30px;

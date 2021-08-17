@@ -33,6 +33,7 @@
   background-color: #f07373;
 }
 .navbar .navbar-fixed .navbar-content {
+  height: 45px;
   padding: 0 15px;
   display: -webkit-box;
   display: -webkit-flex;
